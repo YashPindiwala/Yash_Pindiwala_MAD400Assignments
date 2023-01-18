@@ -6,7 +6,7 @@ export class ContentList {
         this._arrayIcontent = []
     }
 
-    public get content(){
+    public get items(): IContent[]{
         return this._arrayIcontent;
     }
     public addContent(iContent:IContent) {
@@ -14,5 +14,14 @@ export class ContentList {
     }
     public length(){
         return this._arrayIcontent.length;
+    }
+    public ToString(value: number){
+        let obj = this._arrayIcontent[value];
+        let output = `<h2>${obj.name}</h2>
+        <h4>${obj.author}</h4>
+        <p>${obj.description}</p>
+        <p>${obj.type}</p>
+        <img src="${obj.imgSrc}></img>"`;
+        return output;
     }
 }
