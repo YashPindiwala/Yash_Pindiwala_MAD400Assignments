@@ -17,28 +17,28 @@ export class AppComponent {
       author: "Asaf Jha",
       description: "It is a dish from hyderabad, made with the use of basmati rice, spices and meat.",
       name: "Chicken biryani",
-      type: "Non-Veg",
+      type: "Non-Veg"
     };
     let item2: IContent = {
       id: 11,
       author: "Kundan Lal Gujral",
       description: "A curry made from chicken with spiced tomatoess and butter.",
       name: "Butter Chicken",
-      type: "Non-Veg",
+      type: "Non-Veg"
     };
     let item3: IContent = {
       id: 12,
       author: "Sui Dynasty",
       description: "A dish of cooked rice that has been stir-fried in a wok.",
       name: "Fried Rice",
-      type: "Veg",
+      type: "Veg"
     };
     let item4: IContent = {
       id: 14,
       author: "Alfredo di Leilo",
       description: "A creamy pan sauce made from butter and cheese.",
       name: "Alfredo Pasta",
-      type: "Veg",
+      type: "Veg"
     };
     this.contentItem.addContent(item1);
     this.contentItem.addContent(item2);
