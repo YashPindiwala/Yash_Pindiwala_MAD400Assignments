@@ -17,10 +17,10 @@ export class ContentList {
     }
     public ToString(value: number){
         let obj = this._arrayIcontent[value];
-        let output = `<h2>${obj.name}</h2>
-        <h4>${obj.author}</h4>
-        <p>${obj.description}</p>
-        <p>${obj.type}</p>
+        let output = `<h3>Dish:- ${obj.name}</h3>
+        <h4>Invented By:- ${obj.author}</h4>
+        <p>Description:- ${obj.description}</p>
+        <p>Type:- ${obj.type}</p>
         <img src="${obj.imgSrc}></img>"`;
         return output;
     }
