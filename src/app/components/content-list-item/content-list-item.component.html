@@ -1,5 +1,13 @@
 <div *ngIf="singleItem">
+    <h3 [innerHTML]="singleItem.name"></h3>
     <img src="{{singleItem.imgSrc}}" *ngIf="singleItem.imgSrc">
-    <h4 [innerHTML]="singleItem.name"></h4>
-    <div *ngIf="singleItem.description"><p>{{singleItem.description}}</p></div>
+    <p>{{singleItem.type}}</p>
+    <p>{{singleItem.author}}</p>
+    <p>{{singleItem.description}}</p>
+    <section *ngIf="singleItem.tags">
+        <h4>Ingredients</h4>
+        <ul>
+            <li *ngFor="let item of singleItem.tags">{{item}}</li>
+        </ul>
+    </section>
 </div>
