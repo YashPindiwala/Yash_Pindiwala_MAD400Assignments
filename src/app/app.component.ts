@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ContentList } from './models/content-list';
 import { IContent } from './models/icontent';
 
 @Component({
@@ -9,7 +8,7 @@ import { IContent } from './models/icontent';
 })
 export class AppComponent {
   title = 'Y_Pindiwala_MyFavouriteFoodItems';
-  contentItem = new ContentList();
+  
 
   constructor(){
     let item1: IContent = {
@@ -40,9 +39,5 @@ export class AppComponent {
       name: "Alfredo Pasta",
       type: "Veg"
     };
-    this.contentItem.addContent(item1);
-    this.contentItem.addContent(item2);
-    this.contentItem.addContent(item3);
-    this.contentItem.addContent(item4);
   }
 }
