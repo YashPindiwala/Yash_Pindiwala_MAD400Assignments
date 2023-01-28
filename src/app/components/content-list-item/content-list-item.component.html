@@ -1,1 +1,5 @@
-<p>content-list-item works!</p>
+<div *ngIf="singleItem">
+    <img src="{{singleItem.imgSrc}}" *ngIf="singleItem.imgSrc">
+    <h4 [innerHTML]="singleItem.name"></h4>
+    <div *ngIf="singleItem.description"><p>{{singleItem.description}}</p></div>
+</div>

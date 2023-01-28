@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IContent } from 'src/app/models/icontent';
 
 @Component({
   selector: 'app-content-list-item',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./content-list-item.component.scss']
 })
 export class ContentListItemComponent {
-
+  @Input() singleItem?: IContent;
 }
