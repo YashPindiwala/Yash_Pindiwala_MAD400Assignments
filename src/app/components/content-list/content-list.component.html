@@ -1,1 +1,1 @@
-<app-content-list-item *ngFor="let foodItem of items" [singleItem]="foodItem"></app-content-list-item>
+<app-content-list-item *ngFor="let foodItem of items; let even = even; let odd = odd" [singleItem]="foodItem" [ngClass]="{evenColor: even, oddColor: odd}"></app-content-list-item>

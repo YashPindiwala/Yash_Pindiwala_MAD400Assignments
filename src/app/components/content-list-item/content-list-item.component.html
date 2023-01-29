@@ -1,6 +1,6 @@
 <div *ngIf="singleItem">
     <h3 [innerHTML]="singleItem.name"></h3>
-    <img src="{{singleItem.imgSrc}}" *ngIf="singleItem.imgSrc">
+    <img src="{{singleItem.imgSrc}}" *ngIf="singleItem.imgSrc" (click)="display(singleItem)">
     <p>{{singleItem.type}}</p>
     <p>{{singleItem.author}}</p>
     <p>{{singleItem.description}}</p>

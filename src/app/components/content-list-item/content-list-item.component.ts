@@ -7,5 +7,10 @@ import { IContent } from 'src/app/models/icontent';
   styleUrls: ['./content-list-item.component.scss']
 })
 export class ContentListItemComponent {
+[x: string]: any;
   @Input() singleItem?: IContent;
+  display(value: IContent){
+    console.log("ID: " + value.id);
+    console.log("Description: " + value.description);
+  }
 }
