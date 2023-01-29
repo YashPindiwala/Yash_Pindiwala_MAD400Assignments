@@ -1,4 +1,1 @@
-<app-content-list-item [singleItem]="items[0]"></app-content-list-item>
-<app-content-list-item [singleItem]="items[1]"></app-content-list-item>
-<app-content-list-item [singleItem]="items[2]"></app-content-list-item>
-<app-content-list-item [singleItem]="items[3]"></app-content-list-item>
+<app-content-list-item *ngFor="let foodItem of items" [singleItem]="foodItem"></app-content-list-item>
