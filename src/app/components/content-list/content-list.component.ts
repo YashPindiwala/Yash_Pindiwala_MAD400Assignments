@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IContent } from 'src/app/models/icontent';
+import { IContent } from '../../models/icontent';
 
 @Component({
   selector: 'app-content-list',
