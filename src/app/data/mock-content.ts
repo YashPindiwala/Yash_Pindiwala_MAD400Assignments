@@ -1,4 +1,6 @@
-export const CONTENTARRAY = [
+import { IContent } from "../models/icontent";
+
+export const CONTENTARRAY: IContent[] = [
     {
         id: 10,
         author: "Asaf Jha",
@@ -26,7 +28,7 @@ export const CONTENTARRAY = [
         ]
       },
       {
-        id: 14,
+        id: 13,
         author: "Alfredo di Leilo",
         description: "A creamy pan sauce made from butter and cheese.",
         name: "Alfredo Pasta",

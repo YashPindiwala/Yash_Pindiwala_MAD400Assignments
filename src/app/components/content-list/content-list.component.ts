@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IContent } from '../../models/icontent';
 import { FoodRecipeService } from '../../services/food-recipe.service';
+import { CONTENTARRAY } from 'src/app/data/mock-content';
 
 @Component({
   selector: 'app-content-list',
