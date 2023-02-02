@@ -1,4 +1,4 @@
-export const ContentArray = [
+export const CONTENTARRAY = [
     {
         id: 10,
         author: "Asaf Jha",
