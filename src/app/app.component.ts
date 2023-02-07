@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IContent } from './models/icontent';
+import { FoodRecipeService } from './services/food-recipe.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,13 @@ import { IContent } from './models/icontent';
 })
 export class AppComponent {
   title = 'Y_Pindiwala_MyFavouriteFoodItems';
-
+  item?: IContent;
+  constructor(private foodService: FoodRecipeService){
+    
+  }
+  ngOnInit(){
+    this.foodService.getSingleContent(13).subscribe((value) => {
+      this.item = value;
+    });
+  }
 }
