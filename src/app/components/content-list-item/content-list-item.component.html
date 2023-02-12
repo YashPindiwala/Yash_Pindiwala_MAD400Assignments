@@ -1,9 +1,10 @@
 <div *ngIf="singleItem">
-    <h3 [innerHTML]="singleItem.name"></h3>
+    <h3><a [routerLink]="singleItem.id + ''">{{singleItem.name}}</a></h3>
+    <!-- <h3 [innerHTML]="singleItem.name"></h3> -->
     <img src="{{singleItem.imgSrc}}" *ngIf="singleItem.imgSrc" (click)="display(singleItem)">
     <p>{{singleItem.type}}</p>
-    <p>{{singleItem.author}}</p>
-    <p>{{singleItem.description}}</p>
+    <!-- <p>{{singleItem.author}}</p> -->
+    <!-- <p>{{singleItem.description}}</p> -->
     <section *ngIf="singleItem.tags">
         <h4>Ingredients</h4>
         <ul>
