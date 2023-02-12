@@ -1,1 +1,11 @@
-<p>search works!</p>
+<div>
+    <input type="number" name="id" #searchId>
+    <input type="submit" (click)="showItem(+searchId.value)">
+</div>
+<div *ngIf="searchItem">
+    <app-content-list-item [singleItem]="searchItem"></app-content-list-item>
+</div>
+<div *ngIf="!searchItem">
+    <p class="error">No item with ID found. Error!!</p>
+</div>
+
