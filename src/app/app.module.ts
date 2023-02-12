@@ -6,13 +6,15 @@ import { ContentListComponent } from './components/content-list/content-list.com
 import { ContentListItemComponent } from './components/content-list-item/content-list-item.component';
 import { DetailViewComponent } from './components/detail-view/detail-view.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentListComponent,
     ContentListItemComponent,
-    DetailViewComponent
+    DetailViewComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
