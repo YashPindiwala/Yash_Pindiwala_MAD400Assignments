@@ -1,2 +1,9 @@
-<p>detail-view works!</p>
-{{itemToShow?.author}}
+<a routerLink="..">Go Back</a>
+<div class="card" *ngIf="itemToShow">
+    <img src="{{itemToShow.imgSrc}}" *ngIf="itemToShow.imgSrc" alt="{{itemToShow.name}}" style="width:100%">
+    <h1>{{itemToShow.name}}</h1>
+    <p class="title">Founder</p>
+    <p>{{itemToShow.author}}</p>
+    <p class="title">Description</p>
+    <p>{{itemToShow.description}}</p>    
+</div>

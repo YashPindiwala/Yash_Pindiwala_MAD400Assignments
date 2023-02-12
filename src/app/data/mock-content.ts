@@ -12,7 +12,7 @@ export const CONTENTARRAY: IContent[] = [
       {
         id: 11,
         author: "Kundan Lal Gujral",
-        description: "A curry made from chicken with spiced tomatoess and butter.",
+        description: "A curry made from chicken with spiced tomatoes and butter.",
         name: "Butter Chicken",
         type: "Non-Veg"
       },
