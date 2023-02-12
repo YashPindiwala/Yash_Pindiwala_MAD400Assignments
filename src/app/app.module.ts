@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ContentListComponent } from './components/content-list/content-list.component';
 import { ContentListItemComponent } from './components/content-list-item/content-list-item.component';
 import { DetailViewComponent } from './components/detail-view/detail-view.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DetailViewComponent } from './components/detail-view/detail-view.compon
     DetailViewComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
