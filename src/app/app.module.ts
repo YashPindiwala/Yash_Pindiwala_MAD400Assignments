@@ -7,6 +7,7 @@ import { ContentListItemComponent } from './components/content-list-item/content
 import { DetailViewComponent } from './components/detail-view/detail-view.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { SearchComponent } from './components/search/search.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SearchComponent } from './components/search/search.component';
     ContentListItemComponent,
     DetailViewComponent,
     SearchComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
