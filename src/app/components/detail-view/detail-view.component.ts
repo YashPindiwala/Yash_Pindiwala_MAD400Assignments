@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IContent } from 'src/app/models/icontent';
-import { FoodRecipeService } from 'src/app/services/food-recipe.service';
+import { IContent } from '../../models/icontent';
+import { FoodRecipeService } from '../../services/food-recipe.service';
 
 @Component({
   selector: 'app-detail-view',
