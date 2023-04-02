@@ -9,6 +9,10 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { SearchComponent } from './components/search/search.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { TopNavigationBarComponent } from './components/top-navigation-bar/top-navigation-bar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { FoodItemService } from './Service/food-item.service';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { TopNavigationBarComponent } from './components/top-navigation-bar/top-n
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(FoodItemService, {
+      delay: 1000,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
