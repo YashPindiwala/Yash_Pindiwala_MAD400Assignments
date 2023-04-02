@@ -1,1 +1,18 @@
-<p>modify-content works!</p>
+<h1>Adding new Content</h1>
+
+<label for="name">Name:</label>
+<input [(ngModel)]="itemToAdd.name"><br>
+
+<label for="description">Description:</label>
+<input [(ngModel)]="itemToAdd.description"><br>
+
+<label for="author">Author:</label>
+<input [(ngModel)]="itemToAdd.author"><br>
+
+<label for="img">Image:</label>
+<input [(ngModel)]="itemToAdd.imgSrc"><br>
+
+<label for="type">Type:</label>
+<input [(ngModel)]="itemToAdd.type"><br>
+
+<input type="button" value="Add" (click)="add()">
