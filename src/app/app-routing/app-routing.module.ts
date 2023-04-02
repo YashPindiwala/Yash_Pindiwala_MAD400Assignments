@@ -5,6 +5,7 @@ import { DetailViewComponent } from '../components/detail-view/detail-view.compo
 import { ContentListComponent } from '../components/content-list/content-list.component';
 import { SearchComponent } from '../components/search/search.component';
 import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
+import { ModifyContentComponent } from '../components/modify-content/modify-content.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: "content",
     component: ContentListComponent
+  },
+  {
+    path: "addContent",
+    component: ModifyContentComponent
   },
   {
     path: "content/:id",
