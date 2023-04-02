@@ -8,6 +8,7 @@ import { DetailViewComponent } from './components/detail-view/detail-view.compon
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { SearchComponent } from './components/search/search.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { TopNavigationBarComponent } from './components/top-navigation-bar/top-navigation-bar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     DetailViewComponent,
     SearchComponent,
     PageNotFoundComponent,
+    TopNavigationBarComponent,
   ],
   imports: [
     BrowserModule,

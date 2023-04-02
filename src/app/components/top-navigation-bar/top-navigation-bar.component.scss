@@ -1,0 +1,15 @@
+:host{
+    display: block;
+    background-color: black;
+}
+a{
+    color: orange;
+    font-size: 1.8em;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
