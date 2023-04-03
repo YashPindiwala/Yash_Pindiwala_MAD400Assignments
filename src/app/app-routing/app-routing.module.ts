@@ -22,6 +22,10 @@ const routes: Routes = [
     component: ModifyContentComponent
   },
   {
+    path: "editContent/:id",
+    component: ModifyContentComponent
+  },
+  {
     path: "content/:id",
     component: DetailViewComponent
   },

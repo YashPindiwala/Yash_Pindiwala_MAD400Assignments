@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { FoodItemService } from './Service/food-item.service';
 import { ModifyContentComponent } from './components/modify-content/modify-content.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientInMemoryWebApiModule.forRoot(FoodItemService, {
       delay: 1000,
     })

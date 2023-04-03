@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { FoodItemService } from 'src/app/Service/food-item.service';
 import { IContent } from 'src/app/models/icontent';
 import { FoodRecipeService } from 'src/app/services/food-recipe.service';
@@ -9,6 +10,7 @@ import { FoodRecipeService } from 'src/app/services/food-recipe.service';
   styleUrls: ['./modify-content.component.scss']
 })
 export class ModifyContentComponent {
+  @Input() id?: number;
   itemToAdd: IContent = {
     type: "",
     imgSrc: "",
@@ -16,8 +18,13 @@ export class ModifyContentComponent {
     description: '',
     author: ''
   }
-  constructor(private service: FoodRecipeService){
-
+  constructor(private service: FoodRecipeService, private route: ActivatedRoute,){}
+  
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      let id = +(params.get('id') ?? 0);
+      console.log(id);
+    });
   }
   add(){
     console.log(this.itemToAdd);

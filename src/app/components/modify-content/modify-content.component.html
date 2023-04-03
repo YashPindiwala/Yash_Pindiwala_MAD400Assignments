@@ -1,18 +1,29 @@
 <h1>Adding new Content</h1>
 
-<label for="name">Name:</label>
-<input [(ngModel)]="itemToAdd.name"><br>
+<template *ngIf="id">
+<label>ID:
+<input [(ngModel)]="id">
+</label><br>
+</template>
 
-<label for="description">Description:</label>
-<input [(ngModel)]="itemToAdd.description"><br>
+<label>Name:
+<input [(ngModel)]="itemToAdd.name">
+</label><br>
 
-<label for="author">Author:</label>
-<input [(ngModel)]="itemToAdd.author"><br>
+<label>Description:
+<input [(ngModel)]="itemToAdd.description">
+</label><br>
 
-<label for="img">Image:</label>
-<input [(ngModel)]="itemToAdd.imgSrc"><br>
+<label>Author:
+<input [(ngModel)]="itemToAdd.author">
+</label><br>
 
-<label for="type">Type:</label>
-<input [(ngModel)]="itemToAdd.type"><br>
+<label>Image:
+<input [(ngModel)]="itemToAdd.imgSrc">
+</label><br>
+
+<label>Type:
+<input [(ngModel)]="itemToAdd.type">
+</label><br>
 
 <input type="button" value="Add" (click)="add()">
