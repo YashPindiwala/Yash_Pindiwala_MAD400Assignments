@@ -1,8 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FoodItemService } from 'src/app/Service/food-item.service';
-import { IContent } from 'src/app/models/icontent';
-import { FoodRecipeService } from 'src/app/services/food-recipe.service';
+import { IContent } from '../../models/icontent';
+import { FoodRecipeService } from '../../services/food-recipe.service';
 
 @Component({
   selector: 'app-modify-content',
@@ -19,7 +18,7 @@ export class ModifyContentComponent {
     author: ''
   }
   constructor(private service: FoodRecipeService, private route: ActivatedRoute,){}
-  
+
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       let id = +(params.get('id') ?? 0);
