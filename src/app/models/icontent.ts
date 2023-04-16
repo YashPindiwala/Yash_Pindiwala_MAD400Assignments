@@ -4,6 +4,6 @@ export interface IContent {
     description: string;
     author: string;
     imgSrc?: string;
-    type: string;
+    type?: string;
     tags?: string[];
 }
