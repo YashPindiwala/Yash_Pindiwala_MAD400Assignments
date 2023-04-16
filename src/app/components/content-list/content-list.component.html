@@ -2,8 +2,8 @@
 
 <hr>
 <h1> VEG </h1>
-<app-content-list-item *ngFor="let foodItem of (items | filterIContent: 'Veg'); let even = even; let odd = odd" [singleItem]="foodItem" [ngClass]="{evenColor: even, oddColor: odd}"></app-content-list-item>
+<app-content-list-item *ngFor="let foodItem of (items | filterIContent: 'Veg'); let even = even; let odd = odd" [singleItem]="foodItem" class="veg"></app-content-list-item>
 
 <hr>
 <h1> Non-Veg </h1>
-<app-content-list-item *ngFor="let foodItem of (items | filterIContent: 'Non-Veg'); let even = even; let odd = odd" [singleItem]="foodItem" [ngClass]="{evenColor: even, oddColor: odd}"></app-content-list-item>
+<app-content-list-item *ngFor="let foodItem of (items | filterIContent: 'Non-Veg'); let even = even; let odd = odd" [singleItem]="foodItem" class="nonveg"></app-content-list-item>

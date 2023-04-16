@@ -12,15 +12,25 @@ div > p:first-of-type{
     color: white;
     background-color: red;
 }
-.evenColor{
-    background-color: teal;
-}
-.oddColor{
-    background-color: pink;
-}
+// .evenColor{
+//     background-color: teal;
+// }
+// .oddColor{
+//     background-color: pink;
+// }
 img{
     width: 200px;
     height: 200px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px;
+}
+:host.veg{
+    display: block;
+    color: black;
+    background-color: red;
+}
+:host.nonveg{
+    display: block;
+    color: red;
+    background-color: black;
 }
