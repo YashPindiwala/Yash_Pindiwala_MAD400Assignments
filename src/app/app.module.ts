@@ -14,6 +14,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { FoodItemService } from './Service/food-item.service';
 import { ModifyContentComponent } from './components/modify-content/modify-content.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilterIContentPipe } from './pipes/filter-icontent.pipe';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PageNotFoundComponent,
     TopNavigationBarComponent,
     ModifyContentComponent,
+    FilterIContentPipe,
   ],
   imports: [
     BrowserModule,
