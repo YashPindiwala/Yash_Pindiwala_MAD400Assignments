@@ -6,7 +6,7 @@ import { IContent } from '../models/icontent';
 })
 export class FilterIContentPipe implements PipeTransform {
 
-  transform(content: IContent[], type?: string): unknown {
+  transform(content: IContent[], type?: string): IContent[] {
     if (type){
       return content.filter(c => c.type === type);
     } else {
